@@ -24,7 +24,29 @@ to give examples and use cases.
 - for functional components memo can be used.
 
 4. What is a fragment and why do we need it? Give an example where it might break my app.\
-   Answer: by default react component can only return one root element. Fragment is used to return multiple react elements without making adding unnecessarily markup
+   Answer: by default react component can only return one root element. Fragment is used to return multiple react elements without making adding unnecessarily markup. The fragment itself is not returned when jsx is rendered to the DOM.
+
+5. How many arguments does setState take and why is it async.\
+   Answer: setState takes in two arguments the first argument is a either an object of the state to update or a callback function that return the updated state, the second parameter is a function you want to execute after the state has been updated.
+   It is asynchronous because the state is not updates immediately because it is an expensive action so updates are made in batches.
+
+6. List the steps needed to migrate a Class to Function Component.\
+   Answer:
+   - Class declarations should be changed to functions
+   - component state should be changes to useState hook.
+   - this.props should be changed to props instead.
+   - All lifecycle method should be converted to functions to be called inside useEFfect hook.
+   - render method should be removed and jsx should be return directly.
+7. List a few ways styles can be used with components.\
+   Answer:
+
+   - by using imported style sheets.
+   - by writing inline styles and passing it to the styles props.
+   - by using Css modules to write statically scopes styles(i.e styles scopes to a component.)
+   - by using a CSS-in-js solution e.g styled components styled-jsx, fela etc
+
+8. How to render an HTML string coming from the server.\
+   Answer: Html string coming from the server can be rendered by using the jsx property dangerouslySetInnerHTML.
 
 run `npm start` or `yarn start` to get the project running
 

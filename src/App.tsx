@@ -7,7 +7,14 @@ function App() {
         <h1>React Auto-Complete</h1>
       </header>
       <Autocomplete
-        suggestions={['White', 'Black', 'Green', 'Blue', 'Yellow', 'Red']}
+        suggestions={[
+          'Mango',
+          'Orange',
+          'Banana',
+          'Water melon',
+          'Grape',
+          'Pineapple',
+        ]}
       />
     </main>
   )

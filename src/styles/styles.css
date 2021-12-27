@@ -65,12 +65,7 @@ input {
   padding: 8px;
   font-size: 16px;
 }
-.suggestions-list > .active,
-.suggestions-list li:hover {
-  background-color: darkgray;
-  cursor: pointer;
-  font-weight: 700;
-}
+
 .suggestions-list li:not(:last-of-type) {
   border-bottom: 1px solid #999;
 }

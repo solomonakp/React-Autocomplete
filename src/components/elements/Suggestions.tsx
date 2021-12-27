@@ -1,4 +1,4 @@
-import { FC, MouseEvent } from 'react'
+import { FC, MouseEvent, memo } from 'react'
 
 interface SuggestionsProps {
   filteredList: string[]
@@ -39,4 +39,4 @@ const Suggestions: FC<SuggestionsProps> = (props) => {
   return <></>
 }
 
-export default Suggestions
+export default memo(Suggestions)
